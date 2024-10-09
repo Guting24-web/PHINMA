@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Development - UPANG</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2E8B57;
+            padding: 0.5rem 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-logo {
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar ul li {
+            margin-left: 5px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 4px 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #0066cc;
+            border-radius: 5px;
+        }
+
+        .active {
+            background-color: #0066cc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Section styles */
+        section {
+            padding: 120px 20px;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Form container styles */
+        .form-container {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-container h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #2E8B57;
+        }
+
+        .organization-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .organization-list li {
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Alumni Image Styles */
+        .alumni-image {
+            margin-top: 20px;
+            max-width: 100%; /* Ensures responsiveness */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: 8px; /* Rounded corners for the image */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="image/logo.jpg" alt="UPANG Logo" class="logo"> PHINMA UPANG COLLEGE OF URDANETA
+        </div>
+        <ul id="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="stud.html class="active>Student Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <br>
+    </nav>
+
+    <!-- Student Development Section -->
+    <section>
+        <h2>Student Development</h2>
+        <div class="form-container">
+            <h3>Student Council</h3>
+            <ul class="organization-list">
+                <li>Supreme Student Council (SSC)</li>
+                <li>Supreme Student Government (SSG)</li>
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <h3>Registered Student Organizations (RSOs)</h3>
+            <h4>RSO (Senior High School Department)</h4>
+            <ul class="organization-list">
+                <li>Manlilikha Visual Arts Club</li>
+                <li>Dangat Production</li>
+                <li>Caption Multimedia Club</li>
+                <li>Sports Club</li>
+                <li>Filipino Club</li>
+                <li>Tech Voc League</li>
+                <li>ABM Executives</li>
+                <li>Math-Sci Organization</li>
+                <li>Senior High School Advocates</li>
+                <li>English Club</li>
+            </ul>
+            <h4>RSO (Tertiary Department)</h4>
+            <ul class="organization-list">
+                <li>Philippine Institute of Civil Engineers – UPANG U Student Chapter</li>
+                <li>United Architects of the Philippines Students Auxiliary – UPANG U Chapter</li>
+                <li>Young Entrepreneurs Society</li>
+                <li>International School of Tourism Management Organization</li>
+                <li>College of Arts and Science Student Council</li>
+                <li>Linguistic Society of AB English Language</li>
+                <li>Computer Science Society</li>
+                <li>Junior Philippine Institute of Accountants – UPANG U Chapter</li>
+                <li>Tactical Group</li>
+                <li>UPang U Medical Technology Student Association</li>
+                <li>The North Star</li>
+                <li>University-wide Organization (UWO)</li>
+                <li>UPANG U Appointments, Performance Evaluation, and Electoral Commission</li>
+                <li>NextGen Chi Alpha PHINMA UPang College Urdaneta</li>
+                <li>UPANG Flames Dance Company</li>
+                <li>The New Tone</li>
+                <li>Student Alliance for Gender Equality and Diversity</li>
+                <li>UPANG Flames Campus Youth Ministry</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>MARKETING-DRIVEN ENROLLMENT OPTIMIZATION SYSTEM</p>
+    </footer>
+
+    <script>
+        // Add any JavaScript functionality here if needed
+    </script>
+
+</body>
+</html>

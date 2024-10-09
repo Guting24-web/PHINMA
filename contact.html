@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - UPANG</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2E8B57;
+            padding: 0.5rem 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-logo {
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar ul li {
+            margin-left: 5px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 4px 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #0066cc;
+            border-radius: 5px;
+        }
+
+        .active {
+            background-color: #0066cc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Section styles */
+        section {
+            padding: 120px 20px;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Form container styles */
+        .form-container {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-container h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #2E8B57;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-container button {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #0066cc;
+        }
+
+        footer {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Map iframe styles */
+        .map-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="image/logo.jpg" alt="UPANG Logo" class="logo"> PHINMA UPANG COLLEGE OF URDANETA
+        </div>
+        <ul id="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="stud.html">Student Life</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <br>
+    </nav>
+
+    <!-- Contact Section -->
+    <section>
+         <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: info.up@phinmaed.com</p>
+            <p>Phone: +63 921 211 9138</p>
+            <p>Address: McArthur Highway Urdaneta City 2428, Pangasinan</p>
+        </div>
+
+        <div class="map-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.2065773547526!2d120.57724591484984!3d15.976838988923078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339145ac003bc289%3A0x5bc8a2ccbc0b98f4!2sPHINMA%20University%20of%20Pangasinan%20(Urduja%20Campus)!5e0!3m2!1sen!2sph!4v1696512345678!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <h2>Contact Us</h2>
+        <div class="form-container">
+            <h3>Get in Touch</h3>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+       
+    </section>
+
+    <footer>
+        <p>MARKETING-DRIVEN ENROLLMENT OPTIMIZATION SYSTEM</p>
+    </footer>
+
+</body>
+</html>

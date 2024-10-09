@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - UPANG - University of Pangasinan</title>
+    <style>
+        body, html, div {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2E8B57;
+            padding: 0.5rem 1rem; /* Reduced padding for more space */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            flex-wrap: wrap; /* Allow wrapping if space runs out */
+        }
+
+        .navbar-logo {
+            font-size: 1.2rem; /* Reduced logo font size */
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .navbar ul li {
+            margin-left: 5px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 4px 8px; /* Reduced padding for nav links */
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #0066cc;
+            border-radius: 5px;
+        }
+
+        .navbar ul li a.active {
+            background-color: #0066cc; /* Active link background color */
+            border-radius: 5px; /* Consistent with hover style */
+            font-weight: bold; /* Bold font for active link */
+        }
+
+        /* Section styles */
+        section {
+            padding: 120px 20px;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        #about {
+            background-color: #f5f5f5;
+        }
+
+        #about h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            color: #555;
+            margin-top: 30px;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Facilities form styles */
+        .facilities {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            color: #555;
+            background: white; /* Background color for form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .facilities h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-top: 30px;
+        }
+
+          .corporate {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            color: #555;
+            background: white; /* Background color for form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .corporate h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        /* Form styles */
+
+
+        /* Responsive navbar for smaller screens */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                display: none;
+                width: 100%;
+            }
+
+            .navbar ul.active {
+                display: flex;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .navbar ul li a {
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+
+            .logo {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Hamburger Menu Styles */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .navbar ul {
+                display: none;
+            }
+
+            .navbar ul.active {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="image/logo.jpg" alt="UPANG Logo" class="logo"> PHINMA UPANG COLLEGE OF URDANETA
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="aboutus.html" class="active">About Us</a></li> <!-- Active class added -->
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="stud.html">Student Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <br>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h1>About Us</h1>
+        <p>The University of Pangasinan, known for its commitment to academic excellence and community service, offers a wide range of programs that equip students with the knowledge and skills necessary for their future careers. We strive to foster an inclusive environment that promotes personal growth and development.</p>
+
+        <h2>Facilities</h2>
+        <div class="facilities">
+            <h3>1st Floor</h3>
+            <p>Entrance Gate, Atrium, Marketing Department, Phlebo Lab, Engineering Lab, Exit Gate, Parking Space, Restroom Male/Female, School Canteen, Incubation Room, Surveying Lab.</p>
+            
+            <h3>2nd Floor</h3>
+            <p>Admin Office (CSDL, REGISTRAR, & FINANCE OFFICE), Storage Room / SCL Room, School Classroom, Restroom Male/Female, School Clinic, Student Lounge.</p>
+            
+            <h3>3rd Floor</h3>
+            <p>Computer Laboratory, School Classroom, Student Lounge, Restroom Male/Female.</p>
+            
+            <h3>4th Floor</h3>
+            <p>Tertiary Department, SHS Department, School Classroom, ChemLab, Restroom Male/Female, Student Lounge.</p>
+            
+            <h3>5th Floor</h3>
+            <p>School Library, School Classroom, Restroom, Architecture Lab, Cooking Lab.</p>
+            
+            <h3>6th Floor</h3>
+            <p>Rooftop.</p>
+        </div>
+
+        <h2>Corporate Social Responsibility</h2>
+        <div class="corporate">
+        <p>PHINMA, through its foundation and strategic business units, aims to make lives better for Filipino families and communities through community service and volunteer engagement, enhancing the effectiveness of its programs.</p>
+        <p>The PHINMA Foundation, Inc. (PFI) was established in 1989 to improve lives by harnessing resources and creating a culture of service. It aims to mold future leaders, provide education and leadership programs, create meaningful change in Filipino families, and open volunteer opportunities. PFI prioritizes education programs, preserving culture, promoting values, and protecting the environment. The flagship program, PNS, was established in 2006 and has produced hundreds of graduates in education, accountancy, and engineering. PFI partners with regional science high schools and universities across 10 regions. Employees are encouraged to contribute through company-led CSR projects and the PHINMA Hero program, fostering volunteerism and sustainability. PFI also provides financial assistance to various causes, including hunger and poverty, youth empowerment, and culture and arts promotion.</p>
+    </div>
+    </section>
+
+    <footer>
+        <p>MARKETING-DRIVEN ENROLLMENT OPTIMIZATION SYSTEM</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

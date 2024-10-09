@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPANG - University of Pangasinan</title>
+    <style>
+        body, html, div {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2E8B57;
+            padding: 0.5rem 1rem; /* Reduced padding for more space */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            flex-wrap: wrap; /* Allow wrapping if space runs out */
+        }
+
+        .navbar-logo {
+            font-size: 1.2rem; /* Reduced logo font size */
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .navbar ul li {
+            margin-left: 5px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 4px 8px; /* Reduced padding for nav links */
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #0066cc;
+            border-radius: 5px;
+        }
+
+        .navbar ul li a.active {
+            background-color: #0066cc; /* Active link background color */
+            border-radius: 5px; /* Consistent with hover style */
+            font-weight: bold; /* Make it bold to indicate active */
+        }
+
+        /* Section styles */
+        section {
+            padding: 120px 20px;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        #home {
+            background-color: #f5f5f5;
+        }
+
+        #home h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        #home h2 {
+            font-size: 1.8rem;
+            color: #666;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Updated image styles */
+        #home img {
+            width: 100%; /* Makes image take the full width of the container */
+            max-width: 800px; /* Sets a maximum width for the image */
+            height: auto; /* Maintains aspect ratio */
+            margin-top: 50px; /* Adds space above the image */
+            border-radius: 8px; /* Adds rounded corners to the image */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive navbar for smaller screens */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                display: none;
+                width: 100%;
+            }
+
+            .navbar ul.active {
+                display: flex;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .navbar ul li a {
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+
+            .logo {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Hamburger Menu Styles */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .navbar ul {
+                display: none;
+            }
+
+            .navbar ul.active {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="image/logo.jpg" alt="UPANG Logo" class="logo"> PHINMA UPANG COLLEGE OF URDANETA
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="Home.html" class="active">Home</a></li> <!-- Active class for Home -->
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="stud.html">Student Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <br>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>WELCOME TO MDEOS!</h1>
+        <h2>“STREAMLINING ENROLLMENT THROUGH DATA-DRIVEN OPTIMIZATION”</h2>
+        <p>Offers a centralized platform that simplifies the enrollment process to enhance efficiency and achieve enrollment goals.</p>
+        <img src="image/home.jpg" alt="Home Image"> <!-- Add your image here -->
+    </section>
+
+    <footer>
+        <p>MARKETING-DRIVEN ENROLLMENT OPTIMIZATION SYSTEM</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

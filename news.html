@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - UPANG</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2E8B57;
+            padding: 0.5rem 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-logo {
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar ul li {
+            margin-left: 5px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 4px 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #0066cc;
+            border-radius: 5px;
+        }
+
+        .active {
+            background-color: #0066cc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Section styles */
+        section {
+            padding: 120px 20px;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Form container styles */
+        .form-container {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-container h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #2E8B57;
+        }
+
+        .alumni-image {
+            width: 300px; /* Increased width for larger size */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 10px; /* Added margin for spacing between images */
+        }
+
+        footer {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Alumni section styles */
+        .alumni-section {
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+        }
+
+        .alumni-section h2 {
+            color: #2E8B57;
+        }
+
+        .alumni-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-text {
+            position: absolute;
+            top: 10px; /* Adjust this for vertical positioning */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #333;
+            font-size: 0.9rem; /* Adjust font size as needed */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="image/logo.jpg" alt="UPANG Logo" class="logo"> PHINMA UPANG COLLEGE OF URDANETA
+        </div>
+        <ul id="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="news.html" class="active">News</a></li>
+            <li><a href="stud.html">Student Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <br>
+    </nav>
+
+    <!-- News Section -->
+    <section>
+        <h1>News</h1>
+        <div class="form-container">
+            <h3>NEWS</h3>
+            <img src="image/1.jpg" alt="Alumni Image" class="alumni-image"><br><Br>
+            <br><br>
+            <img src="image/2.jpg" alt="Alumni Image" class="alumni-image">
+        </div>
+    </section>
+
+    <!-- Alumni Section -->
+    <section class="alumni-section">
+        <h2>Alumni</h2>
+        <div class="alumni-images">
+            <div class="image-container">
+                <img src="image/alumni1.jpg" alt="Alumni 1" class="alumni-image">
+            </div>
+            <div class="image-container">
+                <img src="image/alumni3.jpg" alt="Alumni 2" class="alumni-image">
+            </div>
+            <div class="image-container">
+                <img src="image/alumni4.jpg" alt="Alumni 3" class="alumni-image">
+            </div>
+            <div class="image-container">
+                <img src="image/alumni5.jpg" alt="Alumni 4" class="alumni-image">
+            </div>
+            <!-- Add more alumni images as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>MARKETING-DRIVEN ENROLLMENT OPTIMIZATION SYSTEM</p>
+    </footer>
+
+    <script>
+        // Add any JavaScript functionality here if needed
+    </script>
+
+</body>
+</html>
