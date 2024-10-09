@@ -19,7 +19,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
-            width: 350px; /* Fixed width for better alignment */
+            width: 300px; /* Fixed width for better alignment */
         }
         img {
             width: 100px; /* Logo size */
@@ -31,11 +31,14 @@
         }
         label {
             display: block; /* Makes labels take full width */
+            margin: 10px 0 5px; /* Space above and below labels */
             color: #333; /* Dark gray for contrast */
         }
         input[type="text"],
         input[type="number"] {
             width: 100%;
+            padding: 12px;
+            margin-bottom: 15px; /* Space below inputs */
             border: 1px solid #2e8b57; /* Green border */
             border-radius: 5px;
             transition: border-color 0.3s; /* Smooth border color change */
@@ -48,6 +51,7 @@
         input[type="submit"] {
             background-color: #2e8b57; /* Green background */
             color: white;
+            padding: 12px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -58,13 +62,14 @@
             background-color: #4caf50; /* Lighter green on hover */
         }
         .math-problem {
+            margin: 15px 0; /* Space above and below math problem */
             font-size: 1rem;
             color: #333; /* Dark gray for contrast */
         }
     </style>
 </head>
 <body>
-<center>
+
 <div class="login-form">
     <img src="logo.jpg" alt="Logo"> <!-- Replace with your logo file path -->
     <h2>Login</h2>
@@ -79,7 +84,7 @@
         <input type="submit" value="Login">
     </form>
 </div>
-</center>
+
 <script>
     // Generate a random math problem
     function generateMathProblem() {
